@@ -1,0 +1,9 @@
+.links-container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+}
+/*# sourceMappingURL=banner.css.map */

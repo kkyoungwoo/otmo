@@ -1,7 +1,5 @@
 import { useEffect, useRef } from 'react'
 import './mouse.css'
-import getImage from './util/getImage';
-import Link from './Link'
 
 function Mouse() {
 
@@ -105,12 +103,6 @@ function Mouse() {
     <>  
       <div ref={dotOutline} className='cursor-dot-outline'></div>
       <div ref={dot} className='cursor-dot'></div>
-
-      <div className='links-container'>
-          {/*[...Array(4).keys()].map(i => (
-              <Link mouseOverEvent={mouseOverEvent} mouseOutEvent={mouseOutEvent} key={i} src={getImage(i + 1)} />
-          ))*/}
-      </div>
     </>
   )
 }

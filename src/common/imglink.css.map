@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,GAAG,CAAA;EACC,iBAAiB,EAAE,IAAI;CAC1B",
+    "sources": [
+        "imglink.scss"
+    ],
+    "names": [],
+    "file": "imglink.css"
+}

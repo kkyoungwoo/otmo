@@ -1,11 +1,13 @@
 import React from 'react'
+import whitelogo from '../../assats/common/white_logo.png'
+import ImgLink from '../ImgLink'
 
 function Footer() {
   return (
     <div>
       <div>
         <div>
-          logo white
+          <ImgLink src={whitelogo} />
         </div>
         <div>
           <div>
