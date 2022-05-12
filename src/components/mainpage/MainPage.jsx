@@ -9,13 +9,13 @@ import Process from './process/Process'
 
 function MainPage() {
   return (
-    <div>
-        <Banner />
-        <Members />
-        <Partnership />
-        <Process />
-        
-        <Estimate />
+    <div className='mainpage_wrap'>
+      <Banner />
+      <Members />
+      <Partnership />
+      <Process />
+
+      <Estimate />
     </div>
   )
 }

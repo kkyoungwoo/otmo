@@ -1,7 +1,6 @@
 import './App.css';
 import {lazy, Suspense} from "react";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
-
 import Mouse from './common/mouse/Mouse'
 
 let Top = lazy(()=> {return import('./common/top/Top')} )
@@ -18,8 +17,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Mouse/>
         <Suspense fallback={<div>Loading...</div>}>
-          <Mouse/>
           <Top />
           <Routes>
             <Route path='/' element={<MainPage/>} />

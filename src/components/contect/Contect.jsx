@@ -2,7 +2,13 @@ import React from 'react'
 
 function Contect() {
   return (
-    <div>Contect</div>
+    <div className='contect_wrap'>
+      <div className='contect_bg'>
+        <div className="rayout_default">
+          contect
+        </div>
+      </div>
+    </div>
   )
 }
 

@@ -3,7 +3,7 @@ import './mouse.css'
 
 function Mouse() {
 
-    const delay = 18;
+    const delay = 5;
 
     const dot = useRef(null);
     const dotOutline = useRef(null);
@@ -87,16 +87,18 @@ function Mouse() {
 
         dot.current.style.top = endY.current + 'px';
         dot.current.style.left = endX.current + 'px';
+
     }
 
     const animateDotOutline = () => {
         _x.current += (endX.current - _x.current) / delay;
         _y.current += (endY.current - _y.current) / delay;
-
+        
         dotOutline.current.style.top = _y.current + 'px';
         dotOutline.current.style.left = _x.current + 'px';
-
+        
         requestRef.current = requestAnimationFrame(animateDotOutline)
+        
     }
 
   return (

@@ -5,7 +5,7 @@ import ImgLink from '../ImgLink'
 function Footer() {
   return (
     <div>
-      <div>
+      <div className='rayout_default'>
         <div>
           <ImgLink src={whitelogo} />
         </div>
