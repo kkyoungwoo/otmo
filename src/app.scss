@@ -15,5 +15,10 @@ a{
 }
 
 .rayout_default{
+    margin: 0 auto;
     padding: 0 150px;
+    max-width: 1440px;
+    @media screen and( max-width: 860px) {
+        padding: 0 30px;
+    }
 }

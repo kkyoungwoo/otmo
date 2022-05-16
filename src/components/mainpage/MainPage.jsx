@@ -11,9 +11,9 @@ function MainPage() {
   return (
     <div className='mainpage_wrap'>
       <Banner />
+      <Process />
       <Members />
       <Partnership />
-      <Process />
 
       <Estimate />
     </div>

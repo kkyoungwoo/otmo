@@ -1,0 +1,9 @@
+.member_data_wrap{
+    display: flex;
+    .member_data_card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,6 +1,66 @@
+@-webkit-keyframes nth_secound {
+  0% {
+    top: -30px;
+  }
+  100% {
+    top: -20px;
+  }
+}
+
+@keyframes nth_secound {
+  0% {
+    top: -30px;
+  }
+  100% {
+    top: -20px;
+  }
+}
+
+@-webkit-keyframes nth_three {
+  0% {
+    top: 180px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+@keyframes nth_three {
+  0% {
+    top: 180px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+@-webkit-keyframes nth_four {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -10px;
+  }
+}
+
+@keyframes nth_four {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -10px;
+  }
+}
+
 .banner_wrap .banner_bg {
   background-color: #f7f8f8;
   height: 788px;
+}
+
+@media screen and (max-width: 860px) {
+  .banner_wrap .banner_bg {
+    height: 800px;
+  }
 }
 
 .banner_wrap .banner_bg .banner_content {
@@ -13,7 +73,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+  height: 788px;
+}
+
+@media screen and (max-width: 860px) {
+  .banner_wrap .banner_bg .banner_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .banner_wrap .banner_bg .banner_content .banner_left {
@@ -31,45 +100,80 @@
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 0 auto;
-  width: 100%;
+  width: 50%;
+  height: 100%;
+}
+
+@media screen and (max-width: 860px) {
+  .banner_wrap .banner_bg .banner_content .banner_left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    margin: 100px auto 0;
+  }
+}
+
+.banner_wrap .banner_bg .banner_content .banner_left .roket_img {
+  margin-bottom: 20px;
 }
 
 .banner_wrap .banner_bg .banner_content .banner_left .left_title {
   font-size: 46px;
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 860px) {
+  .banner_wrap .banner_bg .banner_content .banner_left .left_title {
+    font-size: 50px;
+  }
 }
 
 .banner_wrap .banner_bg .banner_content .banner_left .left_title span {
   color: blue;
+  font-weight: 500;
+}
+
+.banner_wrap .banner_bg .banner_content .banner_left .left_title span .brclass {
+  display: none;
+}
+
+@media screen and (max-width: 860px) {
+  .banner_wrap .banner_bg .banner_content .banner_left .left_title span .brclass {
+    display: block;
+  }
 }
 
 .banner_wrap .banner_bg .banner_content .banner_left .left_subtitle {
   font-size: 15.5px;
+  margin-bottom: 62px;
+}
+
+@media screen and (max-width: 860px) {
+  .banner_wrap .banner_bg .banner_content .banner_left .left_subtitle {
+    margin-bottom: 50px;
+  }
 }
 
 .banner_wrap .banner_bg .banner_content .banner_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-flex: .6;
+      -ms-flex: .6;
+          flex: .6;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+@media screen and (max-width: 860px) {
+  .banner_wrap .banner_bg .banner_content .banner_right {
+    -webkit-transform: translateX(-100px) scale(0.9) translateY(-180px);
+            transform: translateX(-100px) scale(0.9) translateY(-180px);
+  }
 }
 
 .banner_wrap .banner_bg .banner_content .banner_right .img_box {
   position: relative;
   width: 100%;
   height: 100%;
-}
-
-.banner_wrap .banner_bg .banner_content .banner_right .img_box div img {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .banner_wrap .banner_bg .banner_content .banner_right .img_box div:nth-child(1) {
@@ -79,20 +183,26 @@
 }
 
 .banner_wrap .banner_bg .banner_content .banner_right .img_box div:nth-child(2) {
+  -webkit-animation: nth_secound 1s ease-in-out alternate infinite;
+          animation: nth_secound 1s ease-in-out alternate infinite;
   position: absolute;
-  top: 0px;
-  left: 200px;
+  top: -30px;
+  left: 30px;
 }
 
 .banner_wrap .banner_bg .banner_content .banner_right .img_box div:nth-child(3) {
+  -webkit-animation: nth_three 1s ease-in-out alternate infinite;
+          animation: nth_three 1s ease-in-out alternate infinite;
   position: absolute;
-  top: 280px;
-  left: 350px;
+  top: 180px;
+  left: 250px;
 }
 
 .banner_wrap .banner_bg .banner_content .banner_right .img_box div:nth-child(4) {
+  -webkit-animation: nth_four 1s ease-in-out alternate infinite;
+          animation: nth_four 1s ease-in-out alternate infinite;
   position: absolute;
-  top: 100px;
-  left: 300px;
+  top: 0px;
+  left: 200px;
 }
 /*# sourceMappingURL=banner.css.map */

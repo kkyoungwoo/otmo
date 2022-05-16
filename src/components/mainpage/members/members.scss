@@ -1,0 +1,23 @@
+.members_wrap{
+    .members_bg{
+        .member_inner_top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin-bottom: 30px;
+            }
+            .title{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 36px;
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
