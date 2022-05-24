@@ -14,7 +14,7 @@
           align-items: center;
 }
 
-.members_wrap .members_bg .member_inner_top img {
+.members_wrap .members_bg .member_inner_top .roket {
   margin-bottom: 30px;
 }
 
@@ -33,6 +33,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 36px;
+  margin-bottom: 50px;
 }
 
 .members_wrap .members_bg .member_inner_top .title span {

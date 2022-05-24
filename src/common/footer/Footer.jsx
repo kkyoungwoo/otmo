@@ -2,31 +2,35 @@ import React from 'react'
 import whitelogo from '../../assats/common/white_logo.png'
 import ImgLink from '../ImgLink'
 
+import './footer.css'
+
 function Footer() {
   return (
-    <div>
+    <div className='footer'>
       <div className='rayout_default'>
-        <div>
-          <ImgLink src={whitelogo} />
-        </div>
-        <div>
+        <div className='footer_box'>
           <div>
-            <div>오트모</div>
-            <div>주소 : 대구광역시 중구 남산로 49 3층</div>
+            <ImgLink src={whitelogo} />
           </div>
           <div>
-            <div>대표: 박유현</div>
-            <div>사업자등록번호 : 000-00-00000</div>
-            <div>개인정보관리자 : 고경우</div>
+            <div>
+              <div>오트모</div>
+              <div>주소 : 대구광역시 중구 남산로 49 3층</div>
+            </div>
+            <div>
+              <div>대표: 박유현</div>
+              <div>사업자등록번호 : 000-00-00000</div>
+              <div>개인정보관리자 : 고경우</div>
+            </div>
+            <div>
+              <div>대표번호 : 053-253-9399</div>
+              <div>팩스번호 : 053-253-9397</div>
+              <div>메일 : otmo@otmo.kr</div>
+            </div>
           </div>
           <div>
-            <div>대표번호 : 053-253-9399</div>
-            <div>팩스번호 : 053-253-9397</div>
-            <div>메일 : otmo@otmo.kr</div>
+            OTMO ALL right reserved.
           </div>
-        </div>
-        <div>
-          OTMO ALL right reserved.
         </div>
       </div>
     </div>

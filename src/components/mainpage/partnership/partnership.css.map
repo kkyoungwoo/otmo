@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAA;EACX,gBAAgB,EAAE,OAAO;CAC5B",
+    "sources": [
+        "partnership.scss"
+    ],
+    "names": [],
+    "file": "partnership.css"
+}

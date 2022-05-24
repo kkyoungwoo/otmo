@@ -1,9 +1,35 @@
 .member_data_wrap{
     display: flex;
-    .member_data_card{
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .member_data_cards{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        border: 1px solid black;
+        width: 250px;
+        height: 320px;
+        padding-top: 30px;
+        overflow: hidden;
+        border-radius: 15px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        .member_team{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .member_subtext{
+            text-align: center;
+        }
+        .member_img{
+            display: flex;
+            margin-bottom: 0;
+        }
+    }
+    .member_data_cards:last-child{
+        margin-right: 0px;
     }
 }

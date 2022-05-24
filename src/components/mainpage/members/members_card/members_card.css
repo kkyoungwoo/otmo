@@ -2,9 +2,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1000px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.member_data_wrap .member_data_card {
+.member_data_wrap .member_data_cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,11 +21,39 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px solid black;
+  width: 250px;
+  height: 320px;
+  padding-top: 30px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.member_data_wrap .member_data_cards .member_team {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.member_data_wrap .member_data_cards .member_subtext {
+  text-align: center;
+}
+
+.member_data_wrap .member_data_cards .member_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.member_data_wrap .member_data_cards:last-child {
+  margin-right: 0px;
 }
 /*# sourceMappingURL=members_card.css.map */
