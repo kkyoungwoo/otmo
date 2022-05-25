@@ -11,6 +11,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
 .member_data_wrap .member_data_cards {

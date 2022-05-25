@@ -1,3 +1,40 @@
 .partnership_bg{
     background-color: #f6f5f4;
+    @media screen and(max-width: 860px){
+        background-color: #f7f8f8;
+    }
+    .partner_box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 0;
+        .top_inner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .partner_title{
+                font-size: 46px;
+                font-weight: 500;
+                margin: 15px 0;
+                color: #2f2725;
+            }
+            .partner_sub_title{
+                color: #635d5c;
+                margin-bottom: 80px;
+            }
+        }
+        .partener.mobileimg{
+            display: none; 
+            @media screen and(max-width: 860px){
+                display: block;
+            }
+        }
+        .partener.pcimg{
+            @media screen and(max-width: 860px){
+                display: none;
+            }
+        }
+    }
 }
